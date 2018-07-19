@@ -17,7 +17,7 @@ class Const{
 
 	public void display()
 	{
-		System.out.println("x:"+ x+" y: "+y)
+		System.out.println("x:"+ x+" y: "+y);
 		
 	}
 	
@@ -27,9 +27,10 @@ public class ConstructorDemo {
 	
 	public static void main(String[] args)
 	{
-		//Demo d = new Demo(2,3);
+		Const d1 = new Const(2,3);
 		Const d =  new Const();
 		System.out.println(d.x);
+		System.out.println(d1.y);
 		
 	}
 
