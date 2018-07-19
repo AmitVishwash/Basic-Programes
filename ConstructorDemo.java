@@ -17,7 +17,7 @@ class Const{
 
 	public void display()
 	{
-		System.out.println("x:"+ x+" y: "+y);
+		System.out.println("x:"+ x+" y: "+y)
 		
 	}
 	
