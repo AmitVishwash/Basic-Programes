@@ -15,7 +15,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        bat(encoding: 'UTF8', returnStdout: true, script: 'echo \'Deployed\'')
+        bat(encoding: 'UTF8', returnStdout: true, script: 'echo \'Deployed\'', label: 'Deployed')
       }
     }
 
