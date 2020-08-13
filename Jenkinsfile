@@ -16,7 +16,8 @@ pipeline {
     stage('Deploy') {
       steps {
         bat(encoding: 'UTF8', returnStdout: true, script: 'echo \'Deployed\'', label: 'Deployed')
-        archiveArtifacts(artifacts: 'pipeline.log', onlyIfSuccessful: true, fingerprint: true)
+        writeFile(file: 'Results.log', text: 'The application has been deployed successfully', encoding: 'UTF8')
+        archiveArtifacts(artifacts: '/.log', fingerprint: true, onlyIfSuccessful: true)
       }
     }
 
