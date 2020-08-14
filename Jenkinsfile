@@ -10,7 +10,7 @@ pipeline {
     stage('Buzz Buzz') {
       steps {
         echo 'You are in'
-        bat 'echo Amit from $Name'
+        bat 'echo Amit from $NAME'
       }
     }
 
@@ -24,6 +24,6 @@ pipeline {
 
   }
   environment {
-    Name = 'Jenkins'
+    NAME = 'Jenkins'
   }
 }
