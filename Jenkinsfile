@@ -1,8 +1,5 @@
 pipeline {
   agent any
-   environment {
-    NAME = 'Jenkins'
-  }
   stages {
     stage('Bees Buzz') {
       steps {
@@ -13,7 +10,7 @@ pipeline {
     stage('Buzz Buzz') {
       steps {
         echo 'You are in'
-        echo 'Amit from ${NAME}'
+        sh "echo My hostname is: ${NAME}"
       }
     }
 
@@ -26,5 +23,7 @@ pipeline {
     }
 
   }
- 
+  environment {
+    NAME = 'Jenkins'
+  }
 }
