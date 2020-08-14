@@ -3,13 +3,14 @@ pipeline {
   stages {
     stage('Bees Buzz') {
       steps {
-        echo 'Hello'
+        echo 'Hello Bees Buzz!!!'
       }
     }
 
     stage('Buzz Buzz') {
       steps {
         echo 'You are in'
+        echo 'Hello from $Name'
       }
     }
 
@@ -21,5 +22,8 @@ pipeline {
       }
     }
 
+  }
+  environment {
+    Name = 'Jenkins'
   }
 }
