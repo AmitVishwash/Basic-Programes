@@ -10,7 +10,7 @@ pipeline {
     stage('Buzz Buzz') {
       steps {
         echo 'You are in'
-        bat(script: 'echo \'Hello ${NAME}\'', encoding: 'UTF8', returnStdout: true)
+        bat(script: 'echo \'Hello ${env.NAME}\'', encoding: 'UTF8', returnStdout: true)
       }
     }
 
