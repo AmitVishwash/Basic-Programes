@@ -10,7 +10,7 @@ pipeline {
     stage('Buzz Buzz') {
       steps {
         echo 'You are in'
-        echo 'Hello from $Name'
+        sh 'echo Hello from $Name'
       }
     }
 
