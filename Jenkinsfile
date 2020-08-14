@@ -1,5 +1,8 @@
 pipeline {
   agent any
+   environment {
+    NAME = 'Jenkins'
+  }
   stages {
     stage('Bees Buzz') {
       steps {
@@ -23,7 +26,5 @@ pipeline {
     }
 
   }
-  environment {
-    NAME = 'Jenkins'
-  }
+ 
 }
