@@ -10,7 +10,7 @@ pipeline {
     stage('Buzz Buzz') {
       steps {
         echo 'You are in'
-        echo 'echo "Amit from ${env.NAME}"'
+        echo 'Amit from ${env.NAME}'
       }
     }
 
