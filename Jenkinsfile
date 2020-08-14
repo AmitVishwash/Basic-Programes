@@ -10,7 +10,7 @@ pipeline {
     stage('Buzz Buzz') {
       steps {
         echo 'You are in'
-        sh "echo My hostname is: ${NAME}"
+        bat 'Hello ${NAME}'
       }
     }
 
